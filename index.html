@@ -14,35 +14,93 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
 "
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <a href="#" class="header__logo">
-          <img src="img/crown.svg" alt="icon: crown" />
-        </a>
-        <div class="header__wrapper">
-          <div class="header__info">
-            <span class="header__suptitle">Новосибирск</span>
-            <h1 class="header__title">Питомник Мейн-Кунов</h1>
-            <div class="header__subtitle">
-              Первый питомник с расширенным спектром услуг
-            </div>
-            <a href="#" class="header__button">Смотреть котиков</a>
+      <!-- <div class="header-container"> -->
+      <a href="#" class="header__logo">
+        <img src="img/crown.svg" alt="icon: crown" />
+      </a>
+      <div class="header__wrapper">
+        <div class="header__info">
+          <span class="header__suptitle">Новосибирск</span>
+          <h1 class="header__title">Питомник Мейн-Кунов</h1>
+          <div class="header__subtitle">
+            Первый питомник с расширенным спектром услуг
           </div>
-          <!-- /.header__info -->
-          <div class="header__img">
-            <img src="img/header__image.jpg" alt="image: cat" />
+          <a href="#" class="section__button header__button"
+            >Смотреть котиков</a
+          >
+          <div class="header__socials">
+            <div class="header__line"></div>
+            <a href="https://vk.com/" class="header__vk"></a>
+            <a href="https://twitter.com/" class="header__twitter"></a>
+            <a href="https://ru-ru.facebook.com/" class="header__facebook"></a>
           </div>
+          <!-- /.header__socials -->
         </div>
-        <!-- /.header__wrapper -->
+        <!-- /.header__info -->
+        <div class="header__img">
+          <img src="img/header__image.png" alt="image: cat" />
+        </div>
       </div>
+      <!-- /.header__wrapper -->
+      <!-- </div> -->
       <!-- /.container -->
     </header>
     <!-- /.header -->
 
+    <section class="pets">
+      <div class="container">
+        <div class="pets__wrapper">
+          <div class="pets__header">
+            <h2 class="section__title pets__title">Питомцы</h2>
+            <p class="section__text pets__text">
+              Все представители нашего питомника имеют ветеринарный паспорт с
+              отметками о прививках и документ с родословной
+            </p>
+          </div>
+          <!-- /.pets__header -->
+          <div class="pets__gallery swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="pets__slide swiper-slide">
+                <div class="pets__img-1"></div>
+                <div class="pets__img-2"></div>
+                <div class="pets__img-3"></div>
+              </div>
+              <div class="pets__slide swiper-slide">
+                <div class="pets__img-1"></div>
+                <div class="pets__img-2"></div>
+                <div class="pets__img-3"></div>
+              </div>
+              <div class="pets__slide swiper-slide">
+                <div class="pets__img-1"></div>
+                <div class="pets__img-2"></div>
+                <div class="pets__img-3"></div>
+              </div>
+              ...
+              <!-- If we need pagination -->
+              <div class="swiper-pagination">
+                
+              </div>
+            </div>
+            <!-- /.swiper-wrapper -->
+          </div>
+          <!-- /.pets__gallery -->
+          <a href="#" class="section__button pets__button">Смотреть больше</a>
+        </div>
+        <!-- /.pets__wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.pets -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

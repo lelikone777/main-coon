@@ -1,13 +1,35 @@
 .header
+  width: 100%
+  min-height: 686px
+  background-color: $dark-black
   &__wrapper
     display: flex
+    position: relative
+    min-height: 686px
+  &__logo
+    position: absolute
+    left: 50%
+    transform: translate(-49%, 49%)
   &__info
     width: 50%
+    min-height: 686px
     display: flex
     flex-direction: column
+    position: relative
   &__img
+    position: relative
     width: 50%
+    img
+      top: -1px
+      right: 0
+      position: absolute
+      width: 1019px
+      height: 687px
   &__suptitle
+    position: absolute
+    max-width: 350px
+    top: 27%
+    left: 30.5%
     font-style: normal
     font-weight: normal
     font-size: 16px
@@ -15,24 +37,60 @@
     text-align: center
     color: $gold
   &__title
+    position: absolute
+    max-width: 350px
+    top: 33%
+    left: 30%
     font-family: 'Yeseva One', cursive
     font-style: normal
     font-weight: normal
     font-size: 52px
     line-height: 60px
+    color: $white
   &__subtitle
+    position: absolute
+    max-width: 270px
+    top: 53%
+    left: 30%
+    text-align: left
     font-style: normal
     font-weight: normal
     font-size: 16px
     line-height: 24px
-    text-align: center
     color: $gold
   &__button
-    font-family: Roboto
-    font-style: normal
-    font-weight: bold
-    font-size: 14px 
-    line-height: 16px
-    color: $white
-    border: 0,5px solid $gold
-    padding: 18px 35px  
+    position: absolute
+    max-width: 350px
+    top: 67%
+    left: 30%
+  &__socials
+    position: absolute
+    top: 66%
+    left: 11.1%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    min-height: 166px
+  &__line
+    height: 78px
+    width: 1px
+    // border: 1px solid rgba(255, 255, 255, 0.61)
+    background-color: $gold
+  &__vk
+    background-image: url('../img/vk.svg')
+    background-repeat: no-repeat
+    width: 13px
+    height: 8px
+    margin-top: 13px
+  &__twitter  
+    background-image: url('../img/twitter.svg')
+    background-repeat: no-repeat
+    width: 15px
+    height: 10px
+  &__facebook
+    background-image: url('../img/facebook.svg')
+    background-repeat: no-repeat
+    width: 5px
+    height: 11px
+
