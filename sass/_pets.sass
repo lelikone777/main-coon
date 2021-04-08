@@ -12,6 +12,8 @@
     grid-template-columns: 1fr 1fr
     grid-template-rows: 1fr 1fr
     height: 485px
+    &-wrapper
+      height: 100%
   &__img
     background-repeat: no-repeat
     background-size: cover
@@ -41,18 +43,33 @@
     bottom: 0
     left: 50%
     transform: translateX(-50%)
+  &__pagination
+    position: absolute
+    display: flex
+    justify-content: space-between
+    top: 19%
+    left: 50%
+    transform: translateX(-50%)
+    width: 272px
+    span
+      &:first-child
+        content: "Коты"
+
+
+ 
+
+
+
 
 .swiper-pagination-bullet 
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  line-height: 20px;
-  font-size: 12px;
-  color: #000;
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.2);
+  width: 20px
+  height: 20px
+  text-align: center
+  line-height: 20px
+  font-size: 12px
+  color: rgba(255, 255, 255, 0.2)
+  opacity: 1
 
 
 .swiper-pagination-bullet-active 
-  color: #fff;
-  background: #007aff;
+  color: #fff
