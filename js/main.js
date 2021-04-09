@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  const swiper = new Swiper(".swiper-container", {
+  const petsSlider = new Swiper(".pets__gallery", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -12,6 +12,18 @@ $(document).ready(function () {
       renderBullet: function (index, className) {
         return '<span class="' + className + '">' + (index + 1) + "</span>";
       },
+    },
+  });
+
+  const teamSlider = new Swiper(".team__slider", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".team__button-next",
+      prevEl: ".team__button-prev",
     },
   });
 });
