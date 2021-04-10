@@ -18,6 +18,9 @@
     min-height: 650px
     margin-bottom: 59px
     margin-right: 4px
+    list-style: decimal
+    list-style-type: none
+    counter-reset: my-counter
   &__item
     position: relative
     border: 1px solid $gold
@@ -29,6 +32,16 @@
     padding-left: 1px
     padding-left: 40px
     padding-right: 40px
+    &::before 
+      position: absolute
+      left: 0
+      top: 0
+      content: counter(my-counter)
+      counter-increment: my-counter
+      color: #ED1C24
+      font-weight: bold
+      font-style: italic
+      margin-right: 0.5em
     &-question
       font-family: Roboto
       font-style: normal
@@ -43,4 +56,10 @@
       bottom: 1px 
       width: 104px
       height: 110px
-      background-color: $gold
+      background-image: url('../img/+.svg')
+      background-repeat: no-repeat
+      background-position: center center
+      &:active
+        background-color: $gold
+        background-image: url('../img/-.svg')
+   
