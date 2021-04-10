@@ -8,24 +8,37 @@
     margin-bottom: 22px
   &__title
     padding-top: 83px
-    padding-bottom: 23px
+    padding-bottom: 21px
+  &__text
+    font-family: Roboto
+    font-style: normal
+    font-weight: normal
+    max-width: 510px
+    font-size: 16px
+    line-height: 25px
+    text-align: center
   &__slider
     margin-top: 22px
     min-height: 402px
   &__slide
     min-height: 402px
     &-wrap
+      position: relative
     &-img
-      width: 300px
-      height: 300px
-      background-image: url('../img/team-slide-1.jpg')
+      width: 360px
+      height: 365px
       background-repeat: no-repeat
       background-position: center center
       position: absolute
-      top: -25px
-      left: -266px
+      top: -31px
+      left: -337px
+      &--1
+        background-image: url('../img/team-slide-1.jpg')
+      &--2
+        background-image: url('../img/team-slide-2.jpg')
     &-frame
       margin-left: auto
+      margin-right: 80px
       width: 660px
       height: 402px
       border: 1px solid $gold
@@ -34,4 +47,67 @@
       width: 600px
       height: 356px
       margin: 23px 34px 23px 26px
+      padding: 69px 103px 69px 98px
       background-color: $light-black
+    &-title
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: 500
+      font-size: 24px
+      line-height: 28px
+      color: $gold
+      margin-bottom: 6px
+    &-subtitle
+      display: block
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: $gold
+      margin-bottom: 23px
+    &-text
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 25px
+      color: rgba(255, 255, 255, 0.72)
+    &-socials
+      margin-top: 48px
+      display: flex
+      max-width: 68px
+      justify-content: space-between
+      margin-left: 1px
+    &-facebook
+      width: 7px
+      height: 15px
+      background-image: url('../img/facebook.svg')
+      background-repeat: no-repeat
+      background-size: contain
+    &-twitter
+      width: 21px
+      height: 14px
+      background-image: url('../img/twitter.svg')
+      background-repeat: no-repeat
+      background-size: contain
+    &-vk
+      width: 21px
+      height: 12px
+      background-image: url('../img/vk.svg')
+      background-repeat: no-repeat
+      background-size: contain
+  &__button
+    width: 12px
+    height: 29px
+    position: absolute
+    top: 46% 
+    &-prev
+      background-image: url('../img/team-button-next.svg')
+      background-repeat: no-repeat
+      right: 0%
+    &-next
+      background-image: url('../img/team-button-prev.svg')
+      background-repeat: no-repeat
+      left: 0%
+
