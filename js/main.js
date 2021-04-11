@@ -27,3 +27,11 @@ $(document).ready(function () {
     },
   });
 });
+
+const questionsButton = document.querySelector(".questions__item-button");
+const questionsAnswer = document.querySelector(".questions__answer");
+questionsButton.addEventListener("click", showAnswer());
+
+const showAnswer = function() {
+  questionsAnswer.classList.toggle("questions__answer--visible");
+};

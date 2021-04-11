@@ -18,36 +18,45 @@
     min-height: 650px
     margin-bottom: 59px
     margin-right: 4px
-    list-style: decimal
-    list-style-type: none
-    counter-reset: my-counter
+    // list-style: decimal-leading-zero
+    counter-reset: num
   &__item
+    counter-increment: (num)
     position: relative
     border: 1px solid $gold
     min-height: 110px
     width: 793px
     margin-left: auto
     margin-bottom: 40px
-    padding-top: 42px
-    padding-left: 1px
-    padding-left: 40px
-    padding-right: 40px
+    // padding-top: 42px
+    // padding-left: 40px
+    // padding-right: 40px
     &::before 
       position: absolute
-      left: 0
-      top: 0
-      content: counter( my-counter)
-      counter-increment: (my-counter)
-      color: #ED1C24
-      font-weight: bold
-      margin-right: 0.5em
-    &-question
+      left: -117px
+      top: 13px
+      content: counter(num) "."
       font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 70px
+      line-height: 82px
+      color: $gold
+      margin-right: 0.5em
+    &:nth-child(-n+9):before 
+	    content: "0" counter(num) 
+    &-question
+      display: inline-block
+      font-family: Roboto, sans-serif
       font-style: normal
       font-weight: 500
       font-size: 16px
       line-height: 19px
       color: #DDD0C3
+      padding-top: 46px
+      padding-left: 42px
+      padding-right: 40px
+      padding-bottom: 43px
     &-button
       position: absolute
       right: 0
@@ -61,4 +70,25 @@
       &:active
         background-color: $gold
         background-image: url('../img/-.svg')
+  &__answer
+    display: none
+    border: 1px solid $gold
+    width: 100%
+    padding-top: 38px
+    padding-left: 42px
+    padding-right: 40px
+    padding-bottom: 14px
+    &--visible
+      display: block
+    &-text
+      font-family: Roboto, sans-serif
+      font-style: normal
+      max-width: 545px
+      font-weight: 300
+      font-size: 16px
+      line-height: 154%
+      color: #DDD0C3
+      &--1
+        &_top
+          padding-bottom: 27px
    
