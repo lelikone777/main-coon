@@ -26,6 +26,18 @@ $(document).ready(function () {
       prevEl: ".team__button-prev",
     },
   });
+
+    const reviewsSlider = new Swiper(".reviews__slider", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".team__button-next",
+        prevEl: ".team__button-prev",
+      },
+    });
 });
 
 const questionsButton = document.querySelector(".questions__item-button");
